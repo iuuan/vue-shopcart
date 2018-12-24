@@ -34,6 +34,7 @@ new Vue({
 					item.productQuantity=1;
 				}
 			}
+			this.calcTotalPrice();//修改1：当购物车中商品数量发生变化时，重新计算总金额。
 		},
 		selectedProduct:function(item){
 			if(typeof item.checked == 'undefined'){
